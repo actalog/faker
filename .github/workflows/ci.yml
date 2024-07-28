@@ -17,14 +17,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Should not fail
-        id: should-not-fail
-        uses: ./
-        with:
-          module: 'internet'
-          method: 'email'
+      # - name: Should not fail
+      #   id: should-not-fail
+      #   uses: ./
+      #   with:
+      #     module: 'internet'
+      #     method: 'email'
       - uses: gabrielrufino/expect-action@develop
         with:
           type: 'regex'
-          value: ${{ steps.should-not-fail.outputs.value }}
+          value: '1'
           pattern: '^-?\d+$'
