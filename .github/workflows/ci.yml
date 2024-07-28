@@ -26,5 +26,5 @@ jobs:
       - uses: gabrielrufino/expect-action@develop
         with:
           type: 'regex'
-          value: '1'
+          value: '123'
           pattern: '^-?\d+$'
