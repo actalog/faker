@@ -5,7 +5,7 @@ inputs:
     description: 'Which module to use'
     required: true
   value:
-    description: 'Which module's method to use'
+    description: Which module's method to use
     required: true
 
 runs:
