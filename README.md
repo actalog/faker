@@ -1,1 +1,1 @@
-# randomize-action
+# Faker - GitHub Action
