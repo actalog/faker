@@ -1,15 +1,13 @@
-const core = require('@actions/core');
+const core = require('@actions/core')
+const { faker } = require('@faker-js/faker')
 
 try {
   const module = core.getInput('module')
   const method = core.getInput('method')
 
-  console.log({
-    module,
-    method,
-  })
+  const value = faker[module][method]()
 
-  core.setOutput('value', 'contato@gabrielrufino.com')
+  core.setOutput('value', value)
 } catch (error) {
   core.setFailed(error.message);
 }
