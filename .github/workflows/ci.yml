@@ -22,7 +22,7 @@ jobs:
         with:
           module: 'internet'
           method: 'email'
-      - run: echo "${{ steps.email.outputs.result }}"
+      - run: echo "${{ steps.email.outputs.value }}"
       # - uses: gabrielrufino/expect-action@v1.0.0
       #   with:
       #     type: 'regex'
