@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  - pull_request
+  - push
+  - workflow_dispatch
+
+jobs:
+  node-ci:
+    name: Node CI
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: gabrielrufino/node-ci@v3
+  tests:
+    name: Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - id: email
+        uses: ./
+        with:
+          module: 'internet'
+          method: 'email'
+      - run: echo "${{ steps.email.outputs.value }}"
+      # - uses: gabrielrufino/expect-action@v1.0.0
+      #   with:
+      #     type: 'regex'
+      #     value: '123'
+      #     pattern: '^-?\d+$'
