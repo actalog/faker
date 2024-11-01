@@ -1,5 +1,5 @@
 {
-  "name": "@gabrielrufino/randomize-action",
+  "name": "@gabrielrufino/faker-action",
   "private": true,
   "version": "1.0.0",
   "main": "src/index.js",
