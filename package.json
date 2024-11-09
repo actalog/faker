@@ -1,7 +1,7 @@
 {
   "name": "@gabrielrufino/faker-action",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/index.js",
   "scripts": {
     "build": "ncc build src/index.js -o dist"
