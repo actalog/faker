@@ -1,5 +1,5 @@
 {
-  "name": "@gabrielrufino/faker-action",
+  "name": "@actalog/faker",
   "private": true,
   "version": "1.0.1",
   "main": "src/index.js",
