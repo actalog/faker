@@ -1,4 +1,4 @@
-name: Faker
+name: '@actalog/faker'
 
 inputs:
   type:

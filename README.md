@@ -1,3 +1,3 @@
-# Faker - Action
+# Faker
 
 Generate fake data in your GitHub workflows
