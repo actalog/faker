@@ -1,7 +1,7 @@
 {
   "name": "@actalog/faker",
   "private": true,
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "src/index.js",
   "scripts": {
     "build": "ncc build src/index.js -o dist"
