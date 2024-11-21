@@ -1,4 +1,9 @@
 name: '@actalog/faker'
+description: Generates fake data
+author: Gabriel Rufino <contato@gabrielrufino.com>
+branding:
+  icon: file-text
+  color: yellow
 
 inputs:
   type:
