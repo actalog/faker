@@ -7,9 +7,9 @@ branding:
 
 inputs:
   type:
-    description: 'Which module to use'
+    description: Which module to use
     required: true
-  value:
+  method:
     description: Which module's method to use
     required: true
 
