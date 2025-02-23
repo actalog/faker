@@ -1,5 +1,5 @@
-const core = require('@actions/core')
-const { faker } = require('@faker-js/faker')
+import * as core from '@actions/core'
+import { faker } from '@faker-js/faker'
 
 try {
   const module = core.getInput('module')
@@ -9,5 +9,6 @@ try {
 
   core.setOutput('value', value)
 } catch (error) {
+  console.error(error)
   core.setFailed(error.message);
 }

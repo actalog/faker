@@ -4,7 +4,7 @@
   "version": "1.0.3",
   "main": "dist/index.js",
   "scripts": {
-    "build": "ncc build src/index.js -o dist"
+    "build": "ncc build src/index.ts -o dist"
   },
   "author": "Gabriel Rufino <contato@gabrielrufino.com>",
   "license": "UNLICENSED",
@@ -14,6 +14,7 @@
     "@faker-js/faker": "^9.5.0"
   },
   "devDependencies": {
-    "@vercel/ncc": "^0.38.3"
+    "@vercel/ncc": "^0.38.3",
+    "typescript": "^5.7.3"
   }
 }
