@@ -1,19 +1,20 @@
 {
   "name": "@actalog/faker",
   "private": true,
-  "version": "1.0.3",
+  "version": "1.0.5",
   "main": "dist/index.js",
   "scripts": {
-    "build": "ncc build src/index.js -o dist"
+    "build": "ncc build src/index.ts -o dist"
   },
   "author": "Gabriel Rufino <contato@gabrielrufino.com>",
   "license": "UNLICENSED",
   "dependencies": {
     "@actions/core": "^1.11.1",
     "@actions/github": "^6.0.0",
-    "@faker-js/faker": "^9.5.0"
+    "@faker-js/faker": "^9.5.1"
   },
   "devDependencies": {
-    "@vercel/ncc": "^0.38.3"
+    "@vercel/ncc": "^0.38.3",
+    "typescript": "^5.8.2"
   }
 }
