@@ -1,4 +1,7 @@
+import { readFileSync } from 'node:fs'
 import { defineConfig } from 'tsdown'
+
+const pkg = JSON.parse(readFileSync('./package.json', { encoding: 'utf-8' }))
 
 export default defineConfig({
   entry: ['src/index.ts'],
@@ -6,6 +9,6 @@ export default defineConfig({
   format: ['cjs'],
   minify: true,
   deps: {
-    alwaysBundle: ['@actions/core', '@actions/github', '@faker-js/faker'],
+    alwaysBundle: Object.keys(pkg.dependencies || {}),
   },
 })
